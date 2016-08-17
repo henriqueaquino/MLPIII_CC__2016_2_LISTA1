@@ -4,7 +4,7 @@ public class Principal {
 	
 	public static void main(String[] args) {
 		
-		Singleton mObjeto =  mObjeto.getInstancia();
+		Singleton mObjeto =  Singleton.getInstancia();
 	}
 	
 }

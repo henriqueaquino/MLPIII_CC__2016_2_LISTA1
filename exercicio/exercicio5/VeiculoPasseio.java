@@ -4,7 +4,7 @@ public class VeiculoPasseio extends Veiculo {
 	
 	private boolean arCondicionado;
 	private int quantidadePortas;
-	private Pessoa proprietario = new Pessoa();
+	private Pessoa proprietario;
 	
 	public boolean isArCondicionado() {
 		return arCondicionado;
@@ -21,9 +21,11 @@ public class VeiculoPasseio extends Veiculo {
 	public Pessoa getProprietario() {
 		return proprietario;
 	}
-	public void setProprietario(String proprietario) {
-		this.proprietario.setNome(proprietario);
+	public void setProprietario(Pessoa proprietario) {
+		this.proprietario = proprietario;
 	}
+	
+	
 	
 	
 

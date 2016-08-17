@@ -7,6 +7,7 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		Scanner ler = new Scanner(System.in);
+		Pessoa p = new Pessoa();
 		VeiculoPasseio vP = new VeiculoPasseio();
 		VeiculoCarga vC = new VeiculoCarga();
 		
@@ -37,7 +38,8 @@ public class Principal {
 		vP.setArCondicionado(ler.nextBoolean());
 		ler.nextLine();
 		System.out.println("Nome do proprietário: ");
-		vP.setProprietario(ler.next());
+		p.setNome(ler.nextLine());
+		vP.setProprietario(p);
 		System.out.println("Valor da locação: "+vP.valorLocacao()+" reais");
 		
 		System.out.println("Veiculo de carga, digite: ");
@@ -63,6 +65,9 @@ public class Principal {
 		System.out.println("Capacidade de carga: ");
 		vC.setCapacidadeCarga(ler.nextInt());
 		ler.nextLine();
+		System.out.println("Nome do proprietário: ");
+		p.setNome(ler.nextLine());
+		vC.setProprietario(p);
 		System.out.println("Valor da locação: "+vC.valorLocacao()+" reais");
 		
 	}

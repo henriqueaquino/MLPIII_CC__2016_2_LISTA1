@@ -7,6 +7,7 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		Scanner ler = new Scanner(System.in);
+		Autor autor = new Autor();
 		FitaLancamento fL = new FitaLancamento();
 		FitaInfantil fI = new FitaInfantil();
 		
@@ -20,7 +21,8 @@ public class Principal {
 		fL.setPreco(ler.nextDouble());
 		ler.nextLine();
 		System.out.println("Autor: ");
-		fL.setAutor(ler.nextLine());
+		autor.setNome(ler.nextLine());
+		fL.setAutor(autor);
 		
 		System.out.println("Fita Infantil");
 		System.out.println("Digite: ");
@@ -32,6 +34,7 @@ public class Principal {
 		fI.setPreco(ler.nextDouble());
 		ler.nextLine();
 		System.out.println("Autor: ");
-		fI.setAutor(ler.nextLine());
+		autor.setNome(ler.nextLine());
+		fI.setAutor(autor);
 	}
 }
